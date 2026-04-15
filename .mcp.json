@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "robynn": {
+      "type": "http",
+      "url": "https://mcp.robynn.ai/mcp"
+    }
+  }
+}

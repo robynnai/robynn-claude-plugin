@@ -1,0 +1,24 @@
+{
+  "name": "robynn",
+  "version": "0.1.0",
+  "description": "Hosted-MCP marketing workflows for Claude, including website audits, SEO/GEO, battlecards, brand-book work, and connected-app reads.",
+  "author": {
+    "name": "Robynn AI",
+    "url": "https://robynn.ai",
+    "email": "support@robynn.ai"
+  },
+  "homepage": "https://robynn.ai",
+  "repository": "https://github.com/robynnai/robynn-claude-plugin",
+  "license": "UNLICENSED",
+  "keywords": [
+    "marketing",
+    "brand",
+    "seo",
+    "geo",
+    "robynn",
+    "mcp",
+    "website-audit",
+    "battlecards",
+    "connected-apps"
+  ]
+}
