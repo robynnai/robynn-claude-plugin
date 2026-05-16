@@ -17,6 +17,12 @@ Operating rules:
   the more specific Robynn tools when the workflow is clear.
 - Use connected-app tools first for CRM, repository, calendar, and other
   provider-backed operational facts.
+- Use `robynn_capabilities` to discover semantic bridge capabilities when a
+  request depends on current Robynn tool availability.
+- Use `robynn_brand_source_add` and `robynn_brand_rebuild` for confirmed Brand
+  Hub source updates and Brand Context refreshes.
+- Use connected-app writes only through Robynn's MCP tools; never ask the user
+  for provider access tokens or pass provider tokens in tool input.
 - Reuse Robynn `thread_id` values when the user is continuing prior work, and
   use `robynn_run_status` when a run is still pending.
 - Ask only for the minimum missing detail that blocks the Robynn call, such as

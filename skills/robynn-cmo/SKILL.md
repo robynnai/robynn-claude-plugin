@@ -39,6 +39,12 @@ features are available.
 - Use `robynn_run_status` whenever a Robynn tool returns a pending run.
 - Use `robynn_brand_context`, `robynn_status`, and `robynn_usage` for brand
   context, connection state, and usage checks.
+- Use `robynn_capabilities` when you need to discover which Robynn bridge
+  capabilities are available, partial, or planned for the current organization.
+- Use `robynn_brand_source_add` to add an explicitly provided website or text
+  source to Brand Hub when the user is asking to update brand knowledge.
+- Use `robynn_brand_rebuild` after confirmed Brand Hub source changes when the
+  user wants Brand Context refreshed from current Brand Hub documents.
 
 ## `robynn_assist` Guidance
 
@@ -85,7 +91,12 @@ repository facts, or calendar facts:
   primary answer surfaces when present.
 - Only fall back to `robynn_assist` or `robynn_research` if the connected-app
   tools cannot answer the question.
-- Do not assume these tools can perform writes or unsupported provider actions.
+- Use `robynn_connected_app_action` only for supported connected-app writes
+  after the user has clearly requested the write and any required confirmation
+  has been provided.
+- Do not pass provider access tokens to Robynn connected-app tools. Robynn
+  resolves provider credentials server-side.
+- Do not assume unsupported provider actions exist.
 
 ## Guardrails
 

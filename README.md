@@ -10,6 +10,9 @@ remote MCP server at `https://mcp.robynn.ai/mcp`.
 - Adds the optional `robynn:robynn-cmo` agent for focused CMO workflows
 - Keeps plugin parity tied to the production remote MCP surface
 - Avoids local CLI subprocess packaging for plugin users
+- Exposes the Hermes bridge Phase 1 tools through the hosted MCP surface:
+  `robynn_capabilities`, `robynn_brand_source_add`,
+  `robynn_brand_rebuild`, and server-side connected-app write execution
 
 ## Architecture
 
@@ -42,6 +45,8 @@ Expected result:
 - `robynn` appears as a configured MCP server
 - `robynn:robynn-cmo` appears as a plugin skill
 - `robynn:robynn-cmo` appears as a selectable plugin agent
+- `robynn_capabilities` appears in the Robynn tool list and reports
+  `agents.cmo.run` as available
 
 ## OAuth
 

@@ -1,7 +1,7 @@
 {
   "name": "robynn",
-  "version": "0.1.0",
-  "description": "Hosted-MCP marketing workflows for Claude, including website audits, SEO/GEO, battlecards, brand-book work, and connected-app reads.",
+  "version": "0.3.1",
+  "description": "Hosted-MCP marketing workflows for Claude, including website audits, SEO/GEO, battlecards, brand-book work, connected-app reads/writes, and Hermes bridge capability discovery.",
   "author": {
     "name": "Robynn AI",
     "url": "https://robynn.ai",
